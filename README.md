@@ -41,14 +41,16 @@ cd server
 pip install -r requirements.txt
 python app.py
 ```
-💻 Frontend (React) ```
+💻 Frontend (React)
+```
 bash
 cd client
 npm install
-npm run dev ```
+npm run dev
+ ```
 Make sure both servers are running. The React app will call the backend APIs to process your voice or PDF input.
 
-📚 How It Works
+# 📚 How It Works
 🎤 User speaks into the mic.
 
 🧠 Voice is transcribed and sent to the backend.
@@ -59,17 +61,19 @@ Make sure both servers are running. The React app will call the backend APIs to 
 
 🔊 The assistant speaks the response back.
 
-⏳ Hackathon Origin
-This project was built in under 24 hours as a functional MVP during a college hackathon. The goal was to build an assistant that integrates AI with voice interaction for real-time document understanding.
+# ⏳ Hackathon Origin
+This project was built in under 24 hours as a functional MVP during a college hackathon.
 
-🧩 Challenges Faced
+The goal was to build an assistant that integrates AI with voice interaction for real-time document understanding.
+
+# 🧩 Challenges Faced
 Real-time voice handling with React & Python
 
 Synchronizing speech recognition and Gemini output
 
 Deploying AI inference within time constraints
 
-📈 Future Enhancements
+# 📈 Future Enhancements
 Upload and summarize multiple file types (docx, txt)
 
 Memory-based conversation flow
@@ -78,10 +82,10 @@ Better UI for interaction history
 
 Dockerization & deployment
 
-📄 License
+# 📄 License
 This project is open-source under the MIT License.
 
-🙌 Acknowledgements
+# 🙌 Acknowledgements
 Google Generative AI
 
 React
@@ -92,17 +96,11 @@ pyttsx3
 
 Wikipedia API
 
-Built with ❤️ by Team docuMentor @ HackNight 2025
+Built with ❤️ by Team docuMentor @ Intceptrix Hackathon 2025
 
-yaml
-Copy
-Edit
+
 
 ---
-
-Let me know if you'd like a custom badge header (`![Badge](url)`), live demo link section, or GitHub Actions CI/CD setup included.
-
-
 
 
 
