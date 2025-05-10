@@ -1,73 +1,109 @@
-# Welcome to your Lovable project
+# 🧠 docuMentor – Voice-Powered Document Assistant
 
-## Project info
+docuMentor is a smart voice assistant that helps users interact with documents (like PDFs) and online content (e.g., Wikipedia) using natural language. Built during a hackathon, it combines speech recognition, AI, and voice output in one seamless workflow.
 
-**URL**: https://lovable.dev/projects/b17ba8ce-217a-4955-a0a5-ac899875f9fc
+## 🚀 Features
 
-## How can I edit this code?
+- 🎙️ **Speech-to-Text**: Speak your questions directly.
+- 🧠 **AI-Powered Responses**: Uses Gemini AI to understand and respond.
+- 📄 **Document Summarization**: Extract and summarize content from PDF files.
+- 🌐 **Wikipedia Search**: Get spoken summaries from Wikipedia entries.
+- 🔊 **Text-to-Speech**: Listens and speaks back responses.
+- 💻 **Minimal UI**: Clean ChatGPT-like React frontend.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b17ba8ce-217a-4955-a0a5-ac899875f9fc) and start prompting.
+**Frontend**  
+- React.js  
+- Axios  
 
-Changes made via Lovable will be committed automatically to this repo.
+**Backend**  
+- Python  
+- Flask  
+- Gemini AI (`google.generativeai`)  
+- PyPDF2  
+- Wikipedia API  
+- `speech_recognition`  
+- `pyttsx3`  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🧪 Installation & Running Locally
 
-Follow these steps:
+### 🔧 Backend (Python)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+cd server
+pip install -r requirements.txt
+python app.py
 ```
+💻 Frontend (React) ```
+bash
+cd client
+npm install
+npm run dev ```
+Make sure both servers are running. The React app will call the backend APIs to process your voice or PDF input.
 
-**Edit a file directly in GitHub**
+📚 How It Works
+🎤 User speaks into the mic.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🧠 Voice is transcribed and sent to the backend.
 
-**Use GitHub Codespaces**
+📄 If it’s a PDF or Wiki request, data is fetched and processed.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🧠 Gemini AI generates the response.
 
-## What technologies are used for this project?
+🔊 The assistant speaks the response back.
 
-This project is built with:
+⏳ Hackathon Origin
+This project was built in under 24 hours as a functional MVP during a college hackathon. The goal was to build an assistant that integrates AI with voice interaction for real-time document understanding.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🧩 Challenges Faced
+Real-time voice handling with React & Python
 
-## How can I deploy this project?
+Synchronizing speech recognition and Gemini output
 
-Simply open [Lovable](https://lovable.dev/projects/b17ba8ce-217a-4955-a0a5-ac899875f9fc) and click on Share -> Publish.
+Deploying AI inference within time constraints
 
-## Can I connect a custom domain to my Lovable project?
+📈 Future Enhancements
+Upload and summarize multiple file types (docx, txt)
 
-Yes, you can!
+Memory-based conversation flow
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Better UI for interaction history
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Dockerization & deployment
+
+📄 License
+This project is open-source under the MIT License.
+
+🙌 Acknowledgements
+Google Generative AI
+
+React
+
+speech_recognition
+
+pyttsx3
+
+Wikipedia API
+
+Built with ❤️ by Team docuMentor @ HackNight 2025
+
+yaml
+Copy
+Edit
+
+---
+
+Let me know if you'd like a custom badge header (`![Badge](url)`), live demo link section, or GitHub Actions CI/CD setup included.
+
+
+
+
+
+
