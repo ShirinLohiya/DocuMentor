@@ -17,7 +17,7 @@ window.speechSynthesis.speak(text_speak)
     }
 async function aiResponse(prompt){
     let text=await run(prompt)
-    let newText=text.split("**")&&text.split("*")&&text.replace("google","Mentor ")&&text.replace("Google"," Mentor")
+    let newText=text.split("**")&&text.split("*")&&text.replace("google","DocuMentor ")&&text.replace("Google"," DocuMentor")
     setPrompt(newText)
     speak(newText)
     setResponse(true)
